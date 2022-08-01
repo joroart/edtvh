@@ -49,8 +49,8 @@ $speachText1 = stristr($speachText1, '"', true);
   
   
   <div id="v3d-container">
-	<div id="userInputField" style="display: none; bottom: 3%; position: fixed; left: 50%; transform: translate(-50%, -50%);">
-    <input id="inputField" type="text" size="40" >
+	<div id="userInputField" style="display: none; bottom: 4%; position: fixed; left: 50%; transform: translate(-50%, -50%);">
+    <textarea id="inputField" rows="2" cols="40" style="resize: none;"></textarea>
 	<button id="userButton" onclick="userClickButton()">Ok</button>
 	</div>
   </div>
