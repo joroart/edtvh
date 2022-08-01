@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0px;padding:0px;overflow:hidden">
+
+<div id="linkStartDIV" style="position: fixed; transform: translate(-50%, -50%); left: 50%; top: 50%">
+<h1> <a id="linkStart" href="office.php" onClick="showHideElements()" target="iframe1">Cliquez pour commencer</a> </h1>
+</div>
+
+<div id="iframeDIV" style="position:absolute; top:0; left:0; height:100%; width:100%; display: none">
+<iframe name="iframe1" title="webGlApp" style="border:none; overflow:hidden; height:100%; width:100%; position: absolute;" frameborder="0" height="100%" width="100%"></iframe>
+</div>
+
+<script>
+function showHideElements() {
+  var iframeDIV = document.getElementById("iframeDIV");
+  var linkStart = document.getElementById("linkStart");
+  if (iframeDIV.style.display === "none") {
+    iframeDIV.style.display = "block";
+	linkStartDIV.style.display = "none";
+  } 
+}
+</script>
+
+</body>
+</html>
